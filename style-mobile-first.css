@@ -40,7 +40,16 @@ ul {
   background-repeat: no-repeat;
   background-position: left;
   background-size: cover;
-  height: 500px;
+  height: 50vw;
+  position: relative;
+}
+
+.pink-buds-img {
+  width: 20vw;
+  height: 20vw;
+  position: absolute;
+  top: 20px;
+  left: 70vw;
 }
 
 .landing-section__info-box {
@@ -172,7 +181,6 @@ ul {
 }
 
 .about-list__text {
-  font-weight: bold;
   font-size: 1.2rem;
 }
 
@@ -209,138 +217,37 @@ ul {
   padding-top: 20px;
 }
 
-.quote-flex-box{
+.quote-flex-box {
   display: flex;
   gap: 16px;
 }
 
 .quote-img {
   width: 40px;
+  height: fit-content;
 }
 
-.quote-text{
+.quote-text {
   color: white;
   font-weight: bold;
-  font-size: 1.2rem;
+  font-size: 1rem;
+  line-height: 1.6;
 }
 
+.quote-author {
+  color: white;
+}
 
+.footer {
+  background-color: #414141;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  font-weight: normal;
+  padding: 10px;
+}
 
-@media all and (min-width: 768px) {
-  .box-container {
-    padding-left: 10rem;
-    padding-right: 10rem;
-  }
-
-  .header__info h5 {
-    display: block;
-  }
-
-  .landing-section__info-box {
-    position: absolute;
-    right: 10rem;
-    top: 50%;
-    margin-top: -194px;
-    width: 500px;
-    padding: 2.5rem;
-  }
-
-  .btn {
-    padding: 17px 50px;
-  }
-
-  .achievement__img {
-    height: 61px;
-  }
-
-  .statistics-flex-box {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: baseline;
-  }
-
-  .statistics-flex-item {
-    width: 30%;
-    flex-direction: column;
-  }
-
-  .statistics-percentages {
-    color: #59b02f;
-    font-size: 2.5rem;
-    font-weight: bold;
-  }
-
-  .statistics-text {
-    font-weight: bold;
-  }
-  .info-section {
-    flex-direction: row;
-    align-items: stretch;
-  }
-
-  .info-img {
-    width: 50%;
-    height: 600px;
-  }
-
-  .info-text {
-    width: 50%;
-    padding: 40px;
-    font-size: 1.4vw;
-  }
-
-  .btn-section {
-    margin: 50px 0;
-    display: grid;
-    place-items: center;
-  }
-
-  .btn-section button {
-    width: fit-content;
-  }
-
-  .info-section--reverse {
-    flex-direction: row;
-  }
-
-  .about-section {
-    flex-direction: row;
-    gap: 0;
-  }
-
-  .about-list {
-    width: 50%;
-  }
-
-  .about-list__text {
-    padding-right: 20px;
-  }
-
-  .about-trust {
-    width: 50%;
-    text-align: center;
-  }
-
-  .trust-symbols {
-    justify-content: space-evenly;
-  }
-
-  .trust-symbol-img {
-    width: 90px;
-    height: 90px;
-  }
-
-  .btn--about {
-    width: fit-content;
-  }
-
-  .quote-section {
-    background-position: center;
-    height: 400px;
-    padding-top: 40px;
-  }
-
-  .quote-img{
-    width: 60px;
-  }
+.copyrights {
+  display: none;
 }
