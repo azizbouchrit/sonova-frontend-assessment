@@ -65,7 +65,6 @@
   }
   .info-section {
     flex-direction: row;
-    align-items: stretch;
   }
 
   .info-img {
